@@ -9,13 +9,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-
 import javax.sql.DataSource;
 import java.util.Properties;
 
-/**
- * Created by max on 3/27/2017.
- */
 @Configuration
 @EnableTransactionManagement
 public class DatabaseConfig {

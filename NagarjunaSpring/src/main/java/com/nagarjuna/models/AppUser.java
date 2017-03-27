@@ -1,9 +1,15 @@
 package com.nagarjuna.models;
 
 
-import javax.persistence.Column;
-import javax.persistence.Id;
+import javax.persistence.*;
+import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Entity
+@NoArgsConstructor(access = AccessLevel.PUBLIC)
+@AllArgsConstructor(access = AccessLevel.PUBLIC)
 public class AppUser {
 
     @Id

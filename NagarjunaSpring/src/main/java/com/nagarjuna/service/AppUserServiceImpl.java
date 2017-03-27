@@ -8,9 +8,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-/**
- * Created by max on 3/27/2017.
- */
 @Service
 public class AppUserServiceImpl implements AppUserService {
 
