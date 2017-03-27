@@ -27,7 +27,12 @@ public class HomeController {
 
     @RequestMapping(value = "/createUser")
     public ModelAndView createUser() {
-       appUserService.createUser(new AppUser(1, "admin", "admin"));
+
+        AppUser appUser = new AppUser();
+        appUser.setId(1);
+        appUser.setUserName("Batman");
+        appUser.setPassword("Joker");
+        appUserService.createUser(appUser);
         ModelAndView mav = new ModelAndView("CreateUser");
         return mav;
     }
